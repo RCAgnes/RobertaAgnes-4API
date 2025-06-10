@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Roberta's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <img src="assets/images/LOGO.png" alt="Logo" class="logo">
+        <h1>Kitutes</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Casa</a></li>
+                <li><a href="gallery.html">Pic of Me</a></li>
+                <li><a href="about.html">Why Me?</a></li>
+                <li><a href="contact.html" class="active">Let's Talk</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Let's Talk</h2>
+        <form id="contact-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <ul>
+                    <li>
+                        <label for="firstName">Full Name*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <span class="error-message">Please enter your name</span>
+                    </li>
+                    <li>
+                        <label for="Phone">Phone*</label>
+                        <input type="tel" id="Phone" name="Phone" required>
+                        <span class="error-message">Please enter your phone number</span>
+                    </li>
+                    <li>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message">Please enter your email</span>
+                    </li>
+                    <li>
+                        <label for="message">Message*</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <span class="error-message">Please enter your message</span>
+                    </li>
+                    <li>
+                        <button type="submit" id="submitBtn">Send Message</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <!-- Confirmation Popup -->
+        <div id="confirmation-popup" class="popup">
+            <img src="assets/images/check.png" alt="Success">
+            <h3>Thank You!</h3>
+            <p id="confirmation-message"></p>
+            <button id="closePopup">OK</button>
+        </div>
+
+        <!-- Overlay -->
+        <div id="overlay"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="find-us">
+            <h3>Find Me</h3>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="assets/images/letter-f_10971030.gif" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="assets/images/photo-camera_14659779.gif" alt="Instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="assets/images/letter-x_10971055.gif" alt="X">
+                </a>
+            </div>
+        </section>
+
+        <p>&copy; 2024 Roberta. All rights reserved.</p>
+    </footer>
+
+    <!-- Audio for form validation -->
+    <audio id="ErrorSound" src="assets/audio/Error.mp3" preload="auto"></audio>
+
+    <!-- Scripts -->
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+  color: white;
+}
+
+header {
+  background-color: #1b263b;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#profilePhoto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #415a77;
+  margin-bottom: 20px;
+}
+
+#dictionary {
+  background: #415a77;
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#dictionary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#dictionary input,
+#dictionary button {
+  padding: 10px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#dictionary input {
+  width: 60%;
+}
+
+#dictionary button {
+  background-color: #778da9;
+  color: white;
+  cursor: pointer;
+}
+
+#dictionary button:hover {
+  background-color: #e0e1dd;
+  color: #1b263b;
+}
+
+#definitionResult {
+  margin-top: 20px;
+  font-style: italic;
+  min-height: 60px;
+}
+
+footer {
+  background-color: #0d1b2a;
+  padding: 15px;
+  text-align: center;
+  color: #ccc;
+}

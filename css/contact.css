@@ -1,0 +1,147 @@
+/* Contact Form Styles */
+.contact-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Form Elements */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ec9b3f;
+    outline: none;
+    background: rgba(236, 155, 63, 0.1);
+}
+
+/* Labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ec9b3f;
+    font-weight: 500;
+}
+
+/* Error States */
+.error-field {
+    border-color: #ff4444 !important;
+    background-color: rgba(255, 68, 68, 0.1) !important;
+}
+
+.error-message {
+    display: none;
+    color: #ff4444;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.error-message.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Submit Button */
+#submitBtn {
+    background: linear-gradient(45deg, #ec9b3f, #d2691e);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(236, 155, 63, 0.3);
+}
+
+/* Popup and Overlay */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 15, 43, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    color: white;
+    min-width: 300px;
+}
+
+.popup img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.popup h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+#closePopup {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #ec9b3f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#closePopup:hover {
+    background: #d2691e;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        margin: 20px;
+        padding: 20px;
+    }
+}
